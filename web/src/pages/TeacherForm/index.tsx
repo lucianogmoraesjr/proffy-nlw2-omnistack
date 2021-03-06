@@ -1,7 +1,11 @@
+import PageHeader from "../../components/PageHeader";
+
 export default function TeacherForm() {
   return (
     <div>
-      <h1>Teacher Form</h1>
+      <div id="teacher-form-page" className="container">
+         <PageHeader title="Que incrível que você quer dar aulas." />
+      </div>
     </div>
   );
 }
