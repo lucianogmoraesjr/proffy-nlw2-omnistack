@@ -8,6 +8,7 @@ import './styles.css';
 
 interface PageHeaderProps {
   title: string;
+  description?: string;
   children?: ReactNode;
 }
 
@@ -24,7 +25,8 @@ export default function PageHeader(props: PageHeaderProps) {
 
       <div className="header-content">
         <strong>{props.title}</strong>
-        
+        { props.description && <p>{props.description}</p> }
+
         {props.children}
       </div>
 
